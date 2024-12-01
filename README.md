@@ -38,13 +38,14 @@ VQVAE-Pytorch/data/test/images/{0/1/.../9}
 # Quickstart
 * ```cd Image_generation``` change directory
 * ```python -m tools.train_vqvae``` for training vqvae
-* ```python -m tools.infer_vqvae``` for generating reconstructions and encoder outputs for LSTM training
-* ```python -m tools.train_lstm``` for training minimal LSTM 
+* ```python -m tools.infer_vqvae``` for generating reconstructions and encoder outputs for Auto-reg model(LMUformer/LSTM) training
+* ```python -m tools.train_seq``` for training minimal Auto-reg model 
 * ```python -m tools.generate_images``` for using the trained LSTM to generate some numbers
 
 ## Configurations
 * ```config/vqvae_mnist.yaml``` - VQVAE for training on black and white mnist images
 * ```config/vqvae_colored_mnist.yaml``` - VQVAE with more embedding vectors for training colored mnist images 
+* generation type can be changed in the config file under rnn_type as "lstm" or "lmu"
 
 ## Output 
 Outputs will be saved according to the configuration present in yaml files.

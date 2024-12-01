@@ -7,7 +7,7 @@ from tqdm import tqdm
 import torchvision
 from model.vqvae import get_model
 from torchvision.utils import make_grid
-from tools.train_lstm import MnistLSTM, MnistLMU
+from Image_generation.tools.train_seq import MnistLSTM, MnistLMU
 from utils.inception_score import inceptionScore
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

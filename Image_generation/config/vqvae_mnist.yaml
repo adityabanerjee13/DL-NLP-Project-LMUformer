@@ -12,7 +12,7 @@ model_params:
   transpose_activation_fn: 'leaky'
   latent_dim: 2
   codebook_size : 5
-  rnn_type : 'lmu'
+  rnn_type : 'lmu' # "lstm" or "lmu"
 
 train_params:
   task_name: 'vqvae_latent_2_codebook_5'
